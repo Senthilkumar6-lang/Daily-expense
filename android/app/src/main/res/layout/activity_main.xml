@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:text="Daily Expense Tracker"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTodayExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="₹ 0.00"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvTodayLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Today's Expense"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:id="@+id/btnAddExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+ Add Expense" />
+
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expense History" />
+
+    <Button
+        android:id="@+id/btnGroupExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Group Expenses" />
+
+    <Button
+        android:id="@+id/btnMonthlyReport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Monthly Report" />
+
+</LinearLayout>

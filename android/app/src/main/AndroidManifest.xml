@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Allows Android app to connect to your Spring Boot backend over the network -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="DailyExpenc"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Dailyexpenc"
+        android:usesCleartextTraffic="true">
+
+        <!-- Main Home Screen -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- Add Expense Screen -->
+        <activity
+            android:name=".AddExpenseActivity"
+            android:exported="false" />
+
+        <!-- Login Screen - Starting Screen -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
